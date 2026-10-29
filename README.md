@@ -46,6 +46,15 @@ Si el programa usa funcions matemàtiques (`sqrt`, `cos`, `atan`...), afegiu `-l
 gcc -Wall -o serieCos serieCos.c -lm
 ```
 
+Si el programa està repartit en diversos fitxers (per exemple, `llista3/newton/`), cal passar-los tots a `gcc`. Per provar el mètode de Newton amb la funció de `f1.c`:
+
+```bash
+gcc -Wall -o newton newton.c f1.c -lm
+./newton
+```
+
+Per provar-lo amb la de `f2.c`, compileu amb `f2.c` en lloc de `f1.c`.
+
 ## Deseu la vostra feina!
 
 Aquest repositori només serveix per **descarregar** el codi de classe. Els vostres propis programes es perdran quan es tanqui la sessió si no els deseu en algun altre lloc abans de marxar:
