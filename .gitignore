@@ -1,0 +1,8 @@
+# Només versionem codi font i documentació; res de compilats ni sortides.
+*
+!*/
+!*.c
+!*.h
+!*.md
+!*.pdf
+!.gitignore
